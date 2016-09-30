@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:text="Username"
+            android:textSize="25dp"
+            android:width="300dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            android:text="Password"
+            android:width="300dp"
+            android:layout_below="@+id/username"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/login"
+            android:width="150dp"
+            android:layout_below="@+id/password"
+            android:layout_alignLeft="@+id/password"
+            android:layout_alignStart="@+id/password" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/register"
+            android:width="150dp"
+            android:layout_below="@+id/password"
+            android:layout_toRightOf="@+id/login"
+            android:layout_toEndOf="@+id/login" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login With Facebook"
+            android:id="@+id/loginfacebook"
+            android:width="300dp"
+            android:textColor="#fdfdfd"
+            android:background="#434cfd"
+            android:layout_below="@+id/register"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login With Gmail"
+            android:id="@+id/logingmail"
+            android:width="300dp"
+            android:background="#ec6f56"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/loginfacebook"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login With Twitter"
+            android:id="@+id/logintwitter"
+            android:textColor="#ffffff"
+            android:width="300dp"
+            android:background="#4adddd"
+            android:layout_below="@+id/logingmail"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Selamat Datang di Sistem E-Learning"
+            android:id="@+id/textView1"
+            android:width="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp" />
+    </RelativeLayout>
+</LinearLayout>
